@@ -3,6 +3,15 @@
   height: 50px;
   width: 100%;
   background-color: aqua;
+  display: flex;
+  place-items: center;
+}
+.nav p {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 2rem; 
+  font-weight: bold; 
+  color: blue; 
+  letter-spacing: 2px; 
 }
 
 .container {
@@ -84,16 +93,16 @@
 
 
 #slider-img1 {
-  background-image: url("images/fron1.jpeg");
+  background-image: url("images/font1.jpg");
 
 }
 
 #slider-img2 {
-  background-image: url("images/front2.jpeg");
+  background-image: url("images/font2.jpg");
 }
 
 #slider-img3 {
-  background-image: url("images/front3.jpeg");
+  background-image: url("images/font3.jpg");
 }
 #slider-img1, #slider-img2, #slider-img3 {
   background-size: cover; /* Ensures the image covers the entire element */

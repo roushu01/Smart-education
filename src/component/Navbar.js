@@ -7,7 +7,9 @@ class Navbar extends Component {
     
     render() { 
         return <>
-        <div className="nav"></div>
+        <div className="nav">
+            <p>Smart-Education</p>
+        </div>
     </>
 
         ;
