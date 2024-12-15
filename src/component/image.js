@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import downloadImage from '../images/java.jpeg';
 import downloadPython from '../images/python.png';
-import downloadReact from '../images/ReactJS.jpg';
 
 const Image = () => {
   const navigate = useNavigate();
@@ -33,10 +32,7 @@ const Image = () => {
           <img src={downloadPython} alt="Java Programming" />
           <button onClick={handleGenerateClick2}>Click here</button>
         </div>
-        <div className="img-container">
-          <img src={downloadReact} alt="Java Programming" />
-          <button onClick={handleGenerateClick}>Click here</button>
-        </div>
+        
       </div>
 
       

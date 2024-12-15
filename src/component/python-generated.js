@@ -25,6 +25,8 @@ const GeneratePython = () => {
 
   return (
     <div>
+       <div className="container-question">
+       <div className="left-container">
       <h2>Two Marks Questions</h2>
       {twoMarks.length > 0 ? (
         <table>
@@ -48,7 +50,10 @@ const GeneratePython = () => {
       ) : (
         <p>Loading Two Marks Questions...</p>
       )}
-
+      </div>
+      </div>
+      <div className="container-question">
+      <div className="right-container">
       <h2>Ten Marks Questions</h2>
       {tenMarks.length > 0 ? (
         <table>
@@ -72,6 +77,8 @@ const GeneratePython = () => {
       ) : (
         <p>Loading Ten Marks Questions...</p>
       )}
+      </div>
+      </div>
     </div>
   );
 };
