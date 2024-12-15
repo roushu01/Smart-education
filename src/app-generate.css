@@ -1,0 +1,12 @@
+.container-question{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.right-container{
+ 
+}
+.left-container table{
+    width:100%;
+ 
+}

@@ -1,0 +1,129 @@
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: aqua;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+  height: 400px; 
+  width: 100%; 
+  background-color:rgb(161, 205, 246);
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.img-container img {
+  margin: 5px;
+  height:250;
+  width:400px;
+  height:250px;
+  border-radius: 9px;
+}
+.img-container button{
+  border-radius: 9px;
+  height:40px;
+  width:100px;
+  border: 0cap;
+  color: aliceblue;
+  font-size:1rem ;
+  background-color:green;
+}
+.Syllabus{
+  display: flex;
+  flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+  flex-direction: row;
+}
+.Syllabus button{
+  border-radius: 9px;
+  height:40px;
+  width:150px;
+  border: 0cap;
+  color: aliceblue;
+  font-size:1.5rem ;
+  background-color:green;
+}
+.slider-container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%; /* Ensure it allows the slider's full height */
+  overflow: hidden; /* Hide overflow if necessary */
+}
+
+.image-slider {
+  margin: 20px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  animation: slider 20s ease-in-out infinite alternate; /* Arrange images horizontally */
+}
+
+.slider-image {
+   flex:none;
+  width: 100%; 
+  height: 100%; 
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+#slider-img1 {
+  background-image: url("images/fron1.jpeg");
+
+}
+
+#slider-img2 {
+  background-image: url("images/front2.jpeg");
+}
+
+#slider-img3 {
+  background-image: url("images/front3.jpeg");
+}
+#slider-img1, #slider-img2, #slider-img3 {
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image within the element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Set the desired width */
+  height: 100%; /* Set the desired height */
+}
+
+
+
+@keyframes slider {
+  0% {
+    transform: translateX(0%);
+  }
+  35% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%);
+  }
+ 
+  100% {
+    transform: translateX(0%);
+  }
+}
+.slider-image {
+  transform: scale(1); /* Default scale */
+}
+
+.swiper-slide-active .slider-image {
+  transform: scale(1.5);
+}
