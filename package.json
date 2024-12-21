@@ -14,12 +14,18 @@
     "web-vitals": "^2.1.4",
     "webpack": "^5.97.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  
+   "scripts": {
+  "start": "concurrently \"npm run start-react\" \"npm run start-python\"",
+  "start-react": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "start-python": "cd api && .\\.venv\\Scripts\\activate && python software.py"
+}
+
+  
+  ,
   "eslintConfig": {
     "extends": [
       "react-app",
